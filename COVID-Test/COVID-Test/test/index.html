@@ -1,19 +1,37 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta name="viewport" content="width= device-width, initial-scale=1.0">
   <title>Home</title>
-  <link href="style.css" rel="stylesheet" /> Test
+  <link href="style.css" rel="stylesheet" /> 
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
 </head>
 
 <body>
   <div class="container">
+    <div class="navbar">
+      <img src="images/logo.png" class ="logo">
+      <a class="menu-btn"><img src="images\menu (2).png" ></a>
+      <div class="overlay">
+        <div class="text">
+          <ul>
+            <a href="../Home/index.html" style="text-decoration: none;"><li>Home</li></a>
+            <a href="index.html" style="text-decoration: none;"><li>Start a Test</li></a>
+            <li>How to Protect</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="small-covid">
+      <img src="images\v7_10.png" class="small-cov">
+      
+    </div>
+
+    <div class="container2"  >
     <form id="Form1" >
       <h3>Age</h3>
-      <input type="text" placeholder="" required>
+      <input type="text" required>
 
       <h3>Ethnicity</h3>
       <input type="text" placeholder="" required>
@@ -21,6 +39,7 @@
       <h3>Gender</h3>
       <label for="Gender">
         <select name="gender" id="gender">
+          <option value="Male"></option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           
@@ -188,7 +207,7 @@
 
       <div class="btn-box">
         <button  type="button" id = "Back">Back</button>
-        <button  type="Submit" value="Send">Submit</button>
+        <button  type="Submit" id = "Submit" value="Send">Submit</button>
       </div>
 
 
@@ -196,6 +215,19 @@
     </form>
 
 
+    <div class="step-row">
+      <div id="progress"> </div>
+      <div class="step-col"><small>Step 1</small></div>
+      <div class="step-col"><small>Step 2</small></div>
+      <div class="step-col"><small>Results</small></div>
+
+    
+    </div>
+
+  </div>
+
+
+  
     
     
     
