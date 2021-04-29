@@ -8,7 +8,7 @@ File Directory Notes:
 <ul>
 	<li><strong>src</strong></li>
 	<ul>
-		<li>**home**</li>
+		<li><strong>home</strong></li>
 		<ul>
 			<li><strong>home_images</strong></li>
 			<li>home.css</li>
