@@ -10,14 +10,14 @@ File Directory Notes:
 	<ul>
 		<li>**home**</li>
 		<ul>
-			<li>**home_images**</li>
+			<li><strong>home_images</strong></li>
 			<li>home.css</li>
 			<li>home.html</li>
 			<li>home.js</li>
 		</ul>
-		<li>**test**</li>
+		<li><strong>test</strong></li>
 		<ul>
-			<li>**test_images**</li>
+			<li><strong>test_images</strong></li>
 			<li>test.css</li>
 			<li>test.html</li>
 			<li>test.js</li>
