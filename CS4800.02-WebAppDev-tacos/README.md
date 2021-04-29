@@ -6,7 +6,7 @@ This is the github repository of the `COVID Web Application`.
 
 File Directory Notes:
 <ul>
-	<li>**src**</li>
+	<li><strong>src</strong></li>
 	<ul>
 		<li>**home**</li>
 		<ul>
