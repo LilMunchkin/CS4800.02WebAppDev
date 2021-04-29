@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width= device-width, initial-scale=1.0">
+  <title>Start a Test</title>
+  <link href="test.css" rel="stylesheet" /> 
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="test_images/logo.png" class ="logo">
+      <a class="menu-btn"><img src="test_images\menu (2).png" ></a>
+      <div class="overlay">
+        <div class="text">
+          <ul>
+            <!-- Potential More Pages? -->
+            <a href="../home/home.html" style="text-decoration: none;"><li>Home</li></a>
+            <a href="test.html" style="text-decoration: none;"><li>Start a Test</li></a>
+            <li>How to Protect</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="small-covid">
+      <img src="test_images\v7_10.png" class="small-cov">  
+    </div>
+
+    <!-- "Step 1 to form" -->
+    <div id="app" class="container2">
+    <form id="Form1">
+      <h3>Age</h3>
+      <input v-model="age" type="text" placeholder="Enter age"required>
+      <br><br>
+
+      <h3>Ethnicity</h3>
+      <label for="Ethnicity">
+        <select name="ethnicity" id="ethnicity" v-model="ethnicity">
+          <option disabled value="" selected>Select One</option>
+          <option value="American Native or Alaska Native">American Native or Alaska Native</option>
+          <option value="Asian">Asian</option>
+          <option value="Black or African American">Black or African American</option>
+          <option value="Hispanic or Latino">Hispanic or Latino</option>
+          <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
+          <option value="Caucacian">Caucacian</option>
+        </select>
+      </label>
+      <br><br>
+
+      <h3>Sex</h3>
+      <label for="Sex">
+        <select name="sex" id="sex" v-model="sex">
+          <option disabled value="" selected>Select One</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+      <br><br>
+
+      <h3>Health Conditions</h3>
+        <p>Asthma:</p>
+        <input type="radio" id="yes" value="yes" name="asthma" v-model="asthma">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="asthma" v-model="asthma">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="asthma" v-model="asthma">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Cardiovascular Disease:</p>
+        <input type="radio" id="yes" value="yes" name="cardiovascular" v-model="cardiovascular">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="cardiovascular" v-model="cardiovascular">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="cardiovascular" v-model="cardiovascular">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Chronic Lung Disease:</p>
+        <input type="radio" id="yes" value="yes" name="chronic" v-model="chronic">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="chronic" v-model="chronic">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="chronic" v-model="chronic">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Immune Suppression:</p>
+        <input type="radio" id="yes" value="yes" name="immune" v-model="immune">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="immune" v-model="immune">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="immune" v-model="immune">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Metabolic Disease:</p>
+        <input type="radio" id="yes" value="yes" name="metabolic" v-model="metabolic">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="metabolic" v-model="metabolic">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="metabolic" v-model="metabolic">
+        <label for="unknown">Unknown</label>
+      
+      <div class="btn-box">
+        <button type="button" id="Next">Next</button>
+      </div>
+    </form>
+
+    <!-- Step 2 to form -->
+    <form id="Form2">
+      <h3>Health Conditions</h3>
+        <p>Neurologic Disease:</p>
+        <input type="radio" id="yes" value="yes" name="neurologic" v-model="neurologic">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="neurologic" v-model="neurologic">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="neurologic" v-model="neurologic">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Autoimmune Disease:</p>
+        <input type="radio" id="yes" value="yes" name="autoimmune" v-model="autoimmune">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="autoimmune" v-model="autoimmune">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="autoimmune" v-model="autoimmune">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Renal Disease:</p>
+        <input type="radio" id="yes" value="yes" name="renal" v-model="renal">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="renal" v-model="renal">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="renal" v-model="renal">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Gastrointestinal/Liver Disease:</p>
+        <input type="radio" id="yes" value="yes" name="gastrointestinal" v-model="gastrointestinal">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="gastrointestinal" v-model="gastrointestinal">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="gastrointestinal" v-model="gastrointestinal">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Other Disease:</p>
+        <input type="radio" id="yes" value="yes" name="other" v-model="other">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="other" v-model="other">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="other" v-model="other">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Hypertension:</p>
+        <input type="radio" id="yes" value="yes" name="hypertension" v-model="hypertension">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="hypertension" v-model="hypertension">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="hypertension" v-model="hypertension">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Obesity:</p>
+        <input type="radio" id="yes" value="yes" name="obesity" v-model="obesity">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="obesity" v-model="obesity">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="obesity" v-model="obesity">
+        <label for="unknown">Unknown</label>
+        <br><br>
+        <p>Pregnancy:</p>
+        <input type="radio" id="yes" value="yes" name="pregnancy" v-model="pregnancy">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="no" name="pregnancy" v-model="pregnancy">
+        <label for="no">No</label>
+        <input type="radio" id="unknown" value="unknown" name="pregnancy" v-model="pregnancy">
+        <label for="unknown">Unknown</label>
+
+      <div class="btn-box">
+        <button  type="button" id = "Back">Back</button>
+        <button  type="Submit" id = "Submit" value="Send">Submit</button>
+      </div>
+
+
+
+    </form>
+
+
+    <div class="step-row">
+      <div id="progress"> </div>
+      <div class="step-col"><small>Step 1</small></div>
+      <div class="step-col"><small>Step 2</small></div>
+      <div class="step-col"><small>Submit</small></div>
+
+    
+    </div>
+
+  </div>
+
+
+  
+    
+    
+    
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="test.js"> </script>
+  <script src="vue.js"></script>
+</body>
+
+</html>
