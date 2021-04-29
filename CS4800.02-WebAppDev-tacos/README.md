@@ -2,7 +2,7 @@
 
 CS 4800.02 Web Application Development Team
 
-This is the github repository of the 'COVID Web Application'.
+This is the github repository of the `COVID Web Application`.
 
 File Directory Notes:
 <ul>
