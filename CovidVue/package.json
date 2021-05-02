@@ -1,0 +1,19 @@
+{
+  "name": "covid19-poject",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.5",
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.5",
+    "vite": "^2.2.3"
+  }
+}
