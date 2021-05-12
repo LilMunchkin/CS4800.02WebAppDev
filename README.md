@@ -1,4 +1,19 @@
-# CS4800.02WebAppDev
-CS 4800.02 Web Application Development Team
+# covid19-app
 
-This is the github repository of the `COVID Web Application`.
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
