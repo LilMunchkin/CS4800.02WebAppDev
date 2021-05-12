@@ -131,9 +131,15 @@
         <input type="radio" name="icu" id="no" v-bind:value="b" v-model="posts.icu" >
         <label for="no">No</label>
         <br>
-        <button type="submit">Submit</button>
+        <button type="submit" @click="display = !display" >Submit</button>
       </form>
     </div>
+
+    <div class="outcome" v-show="display">
+      <p v-if="final == 0">You are not likely to die of COVID-19.</p>
+      <p v-if="final == 1">You are likely to die of COVID-19.</p>
+    </div>
+
 </template>
 
 <script>
@@ -147,6 +153,7 @@ export default {
       return {
         a: 1,
         b: 2, 
+        //Form Data
         posts:{
           sex: 1,
           patient_type: 1,
@@ -167,19 +174,18 @@ export default {
           contact_other_covid: 1,
           covid_res: 1,
           icu: 1
-        }
+        },
+        //POST Request Result
+        final: 0,
+        display: false,
       }
     },
     methods:{
       //POST Request
       postData(e)
       {
-        //console.warn(this.posts);
         const url = "https://localhost:8080/Production/patient";
         const data = JSON.stringify(this.posts);
-        //const json = JSON.parse(data);
-
-        //console.warn(data);
 
         axios.post(url, data, {
           headers: {
@@ -188,7 +194,8 @@ export default {
           }
         })
         .then((result)=>{
-          console.warn(result);
+          console.warn(result.data),
+          this.final = result.data
         });
         e.preventDefault();
       },
